@@ -20,6 +20,12 @@ hr{
     border: 1px solid black;
     margin: 20px 0;
 }
+h1{
+    margin-bottom: 10px;
+}
+p{
+    line-height: 24px;
+}
 h2{
     flex-direction: column;
     align-items: center;
@@ -116,6 +122,7 @@ transition: width 0.5s;
 }
 /*Cartas*/
 .cartas{
+    padding: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-top: 25px;
