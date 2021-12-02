@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Información sobre Javascript</title>
+        <title>·Mik3Tab·</title>
+        <!--Fav icon-->
+        <link rel="icon" type="image-icon" href="./img/full_stack.ico" type="image/x-icon">
         <!--Link CDN a Font Awesome-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <!--Fuente Ubuntu-->
@@ -26,10 +28,10 @@
                 <a href="./InfoHtml.html">HTML</a>
             </li>
             <li>
-                <a href="./Css.html">CSS</a>
+                <a href="./Portfolio.html">Portfolio</a>
             </li>
             <li>
-                <a href="./Javascript.html">Javascript</a>
+                <a href="./Contacto.html">Contacto</a>
             </li>
             <li>
                 <a href="./About.html">Sobre mí</a>
@@ -38,21 +40,25 @@
     </nav>
     <hr>
     <section class="contenedorInfo">
-        <div class="infoJS">
-           <div>
-               <h1>
-                   ¿Qué es Javascript?
-               </h1>
+        <div class="info formAnchura">
+            <div>
+                    <h1>Formulario de Contacto</h1>
+                    <p>Si tienes ponerte en contacto conmigo, si quieres proponer algún proyecto, o si quieres hablar de cualquier tema random, puedes contactar conmigo a través de este formulario o a través enviándome un email.</p>
+                    <form action="">
+                        <label for="nombre">Nombre</label>
+                            <input type="text" name="fnombre" placeholder="Tu nombre..." id="">
+                        <label for="fapellidos">Apellidos</label>
+                            <input type="text" name="fapellidos" placeholder="Tus apellidos..." id="">
+                        <label for="femail">Email</label>
+                            <input type="text" name="femail" placeholder="Tu email..." id=""><br>
+                        <label for="fmensaje">Mensaje</label>
+                            <textarea name="fmensaje" placeholder="Tu mensaje..." id="" cols="30" rows="10"></textarea>
+                        <input type="submit" value="Enviar">
+                </form>
             </div>
-            <p>JavaScript es el lenguaje de programación encargado de dotar de mayor interactividad y dinamismo a las páginas web. Cuando JavaScript se ejecuta en el navegador, no necesita de un compilador. El navegador lee directamente el código, sin necesidad de terceros. Por tanto, se le reconoce como uno de los tres lenguajes nativos de la web junto a HTML (contenido y su estructura) y a CSS (diseño del contenido y su estructura).</p>
-            <p>Con este lenguaje de programación del lado del cliente (no en el servidor) podemos crear efectos y animaciones sin ninguna interacción, o respondiendo a eventos causados por el propio usuario tales como botones pulsados y modificaciones del DOM (document object model). Por tanto, nada tiene que ver con el lenguaje de programación Java, ya que su principal función es ayudar a crear páginas webs dinámicas.
-                El código de programación de JavaScript se ejecuta en los navegadores, ya sean de escritorio o móviles, ya sean Android o Iphone. Sirve para exactamente lo mismo, da igual en el tipo de dispositivo que se ejecute el navegador.</p>
-        </div>
-        <div class="imgJS">
-            <img src="./img/javascript.png" alt="">
-        </div>
+            </div>
+        <div class="infoJS" style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Carrer%20de%20l'Almod%C3%AD,%201,%2046003%20Val%C3%A8ncia,%20Valencia+(The%20Bridge%20Valencia)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/car-satnav-gps/">Sat Navs</a></iframe></div>
     </section>
-    <h2 id="preguntasJS">Preguntas frecuentes sobre Javascript</h2>
     </div>
     <section class="redes">
         <p>Sigue a Mik3Tab a través de sus redes sociales</p>
@@ -71,7 +77,7 @@
             </a>
         </div>
     </section>
-    <footer class="footer">
+    <footer>
         <h3>Copyright Mik3Tab © - Miguel Talavera</h3>
     </footer>
     <script src="./js/main.js"></script>

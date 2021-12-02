@@ -1,8 +1,13 @@
+:root{
+    --morado: rgba(69, 10, 109, 0.911);
+
+}
 *{
     box-sizing: border-box;
     margin:0;
     padding:0;
 }
+/*MUCHÍSIMA DEUDA TÉCNICA*/
 body{
     background-color: black;
     color: black;
@@ -67,86 +72,44 @@ nav.main ul.nav-menu{
     border-bottom: 2px solid black;
 }
 .banner{
-    width: 100%;
-    height: 300px;
-    /*imagen sacada de Pexels*/
-    background: url(https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat center center/cover;
-    padding:50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+width: 100%;
+height: 300px;
+/*imagen sacada de Pexels*/
+background: url(https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat center center/cover;
+padding:50px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-end;
 }
 .boton{
 cursor: pointer;
+color: azure;
 display: flex;
 border: 0;
 font-weight: bold;
 padding: 10px 20px;
-background: #4a2088;
+background: var(--morado);
 font-size: 15px;
-border: 1px solid #ffff;
+border: 1px solid black;
 margin: 10px 0;
 width: 125px;
+transition: width 0.5s;
 }
-/*comienzo w3*/
-.acordeon{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 800px;
-    min-height: 100vh;
-    background: #bedfe8;
-}
-
-.acordeon .contentBx{
-    position:relative;
-    margin: 10px 20px;
-}
-.acordeon .contentBx .label{
-    position: relative;
-    padding: 10px;
-    background: #2694af;
-    color: #fff;
-    cursor: pointer;
-}
-.acordeon .contentBx .label::before{
-    content:'+';
-    position:absolute;
-    top:50%;
-    right: 20px;
-    transform: translateY(-50%);
-    font-size:1.5em;
-}
-.acordeon .contentBx .content{
-    position:relative;
-    padding: 10px;
-    background: #fff;
-    overflow: hidden;
-    transition: 0.5s;
-    overflow-y: auto;
-}
-.acordeon .contentBx.active .content{
-height: 150px;
-padding: 10px;
-}
-/*fin w3*/
-.botonAcordeon{
-    background-color:rgba(69, 10, 109, 0.911); /*UTILIZAR VARIABLES*/
-    color: azure;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-}
-
 .boton:hover{
     opacity: 0.8 ;
+    width: 200px;
+    transition-timing-function: ease-in-out;
+}
+.info{
+    display: grid;
+}
+.formAnchura{
+    width: 95%;
+    text-align: justify;
+}
+.info h1{
+    text-align: center;
 }
 .banner h2, .banner p{
     margin-bottom: 10px ;
@@ -192,13 +155,21 @@ justify-content: center;
  .cartas-banner{
     width: 100%;
     height: 350px;
-    background: url(https://i.pinimg.com/1200x/c4/b2/7c/c4b27cf2993c750febbc77e803794a52.jpg)no-repeat center center/cover;
+    background: url(https://i.pinimg.com/1200x/c4/b2/7c/c4b27cf2993c750febbc77e803794a52.jpg)no-repeat center center/cover; /*Imagen random que he sacado de internet*/
     margin-bottom: 40px;
  }
 .cartas-banner .contenido{
     width: 40%;
     padding: 90px 0 0 30px;
     color: azure;
+ }
+ .Valencia{
+    width: 100%;
+    height: 80%;
+    margin-top: 10px;
+ }
+ .Valencia h2{
+     text-align: center;
  }
  /*Redes sociales*/
  .redes{
@@ -223,27 +194,36 @@ justify-content: center;
 .links a i:hover{
     opacity: .7;
 }
-/*clases del footer*/
-.footer-links{
-    background: grey;
-    color: azure;
-    font-size: 12px;
-    padding: 35px 0;
-}
-.footer-container{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px;
-    align-items: flex-start;
-    justify-content: center;
-}
-.footer-container ul{
-    margin: 0 auto;
-}
-.footer-container ul li{
-    line-height: 2.8;
-}
-.footer{
+/*Clases del formulario*/
+input[type=text],input[type=submit], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=submit] {
+    background-color: var(--morado);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: #7b4ac5;
+  }  
+  .container {
+    border-radius: 5px;    padding: 20px;
+  }
+  .miPortFolio{
+      width: 80%;
+  }
+/*Footer*/
+footer{
     display: grid;
     background: grey;
     color: black;
@@ -251,14 +231,16 @@ justify-content: center;
     padding: 20px 0;
     text-align: center;
 }
-/*Página Javascript.html*/
 .contenedorInfo{
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
     text-align: justify;
 }
-
+.contenedorInfoPortfolio{
+    display: flex;
+    justify-content: center;
+}
 .panel{
     padding: 0 18px;
     display: none;
@@ -273,7 +255,7 @@ justify-content: center;
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(69, 10, 109, 0.911);
+    background: var(--morado);
     color: azure;
     height: 100%;
     transform: translateX(-400px);
@@ -282,7 +264,7 @@ justify-content: center;
     }
     .nav-main ul.nav-menu li{
         padding: 5px;
-        border-bottom: #ccc solid 1px;
+        border-bottom: azure solid 1px;
     }
     .menu-btn{
         display:block;
@@ -302,9 +284,6 @@ justify-content: center;
     .cartas-banner content{
         width: 80%;
     }
-    .footer-links, .footer-container{
-        grid-template-columns: repeat(2, 2fr);
-    }
 }
 @media(max-width:540px){
     .carta{
@@ -321,10 +300,10 @@ justify-content: center;
     .contenedorInfo{
         grid-template-columns: repeat(1,1fr);
     }
-    .imgJS{
+    .imgYo{
         display:flex;
         flex-direction: row;
-        align-items: center;
+        align-items:flex-end;
         width: 50%;
     }
     #preguntasJS{
