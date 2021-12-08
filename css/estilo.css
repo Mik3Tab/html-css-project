@@ -178,6 +178,23 @@ justify-content: center;
  .Valencia h2{
      text-align: center;
  }
+ .detalles{
+     box-sizing: border-box;
+     margin-top: 20px;
+     border: 1px solid black;
+     border-radius: 10px;
+     background-color: var(--morado);
+     color: azure;
+ }
+ .detalles details{
+     padding: 20px;
+ }
+summary{
+    padding: 5px;
+    border: 2px solid transparent;
+    outline: none;
+    
+}
  /*Redes sociales*/
  .redes{
     margin: 50px;

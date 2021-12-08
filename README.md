@@ -8,6 +8,6 @@ Consta de las siguientes páginas web:
     · About.html
 
 Tecnologías usadas:
-    · HTML ->Estructuración de la página.  []
-    · CSS ->Estilos usados para su diseño. []
-    · JS -> Usado para el responsive.      []
+    · HTML ->Estructuración de la página.  [x]
+    · CSS ->Estilos usados para su diseño. [x]
+    · JS -> Usado para el responsive.      [x]
